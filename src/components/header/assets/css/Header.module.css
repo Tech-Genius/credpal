@@ -12,11 +12,6 @@
     top: 0;
     z-index: 990;
     /* border-bottom: 1px solid #00b0ea2c; */
-    box-shadow: 3px 3px 3px rgba(128, 128, 128, 0.123);
-    -webkit-box-shadow: 0px 0px 15px 0px rgba(189,182,189,1);
-    -moz-box-shadow: 0px 0px 15px 0px rgba(189,182,189,1);
-    box-shadow: 0px 0px 15px 0px rgba(189,182,189,1);
-    background-image: url(../images/header-image.png);
     background-attachment: fixed;
     cursor: pointer;
 }
@@ -66,13 +61,15 @@ width: 100%;
     padding: 5px 0px;
     font-weight: 500;
 }
+.menu ul.menu_links .business{
+    color: #ffffff;
+}
 
-
-#product{
+.menu ul.menu_links .product{
     font-family: 'DM Sans', sans-serif;
-    color: #121212;
+    color: #ffffff;
     font-weight: 500;
- 
+    font-size: 14px;
 }
 
 
@@ -320,7 +317,7 @@ width: 100%;
     }
 
     .sm_cntrl .cntrl {
-        background:#213547;
+        background:#000000;
         font-size: 23px;
         cursor: pointer;
         color: white;

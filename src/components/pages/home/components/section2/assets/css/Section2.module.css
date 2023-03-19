@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap');
+
+.Section2 {
+    display: grid;
+    align-items: center;
+    margin-top: 80px;
+overflow: hidden;
+}
+
+
+.Section2Inner {
+display: flex;
+justify-content: space-between;
+    align-items: stretch;
+}
+
+.Section2Box {
+    width: 21%;
+    justify-self: center;
+    padding: 40px 23px;
+    display: grid;
+
+}
+
+.Section2Box img#first {
+  margin-bottom: 50px;
+margin-top: 20px;
+}
+
+.Section2Box h3 {
+    font-size: 32px;
+    color: #141416;
+    width: 70%;
+    margin: 10px 0px;
+}
+
+.Section2Box h3 span {
+    color: #00B0EA;
+}
+
+
+
+.Section2Box p {
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+
+.Section2Box p span {
+    color: #00B0EA;
+}
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+
+@media screen and (max-width:768px) {
+
+    .Section2 {
+        margin-top: 50px;
+    }
+
+    .Section2Inner {
+            flex-wrap: wrap;
+        }
+        
+        .Section2Box {
+            width: 40%;
+           margin: 20px 0px;
+            display: grid;
+        }
+
+
+
+
+    .Section2Box h3 {
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width:539px) {
+
+    .Section2Box h3 {
+        font-size: 26px;
+    }
+    .Section2Box {
+        width: 100%;
+       margin: 20px 0px;
+        display: grid;
+    }
+
+}

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap');
+
+.Section4 {
+    display: grid;
+    align-items: center;
+    margin-top: 80px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.Section4Inner {
+    background-image: linear-gradient(to right, #00B0EA, #2F338D);
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+}
+
+.Section4InnerBackground {
+    background-image: url(../images/section4.jpg);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.2;
+}
+
+.Section4OverlayText {
+    position: absolute;
+    top: 0;
+
+    padding: 30px 0px;
+    width: 100%;
+    display: grid;
+    align-items: center;
+}
+
+.introText {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    margin: 0;
+}
+
+.Section4BoxWrapper {
+    width: 85%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+    align-items: center;
+    justify-self: center;
+    padding-top: 30px;
+}
+
+.Section4Box {
+    padding: 50px 20px;
+    width: 70%;
+    border-radius: 20px;
+    text-align: center;
+    justify-self: center;
+}
+
+.Section4Box#top {
+    background-color: #2f348d60;
+}
+
+.Section4Box#bottom {
+    margin-top: 50px;
+    background-color: #A2CBE7;
+}
+
+.Section4Box h3 {
+    font-size: 20px;
+    color: white;
+    margin: 0;
+}
+
+.Section4Box p {
+    font-size: 15px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+
+@media screen and (max-width:768px) {
+    .Section4 {
+        margin-top: 50px;
+    }
+
+    .Section4BoxWrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Section4InnerBackground {
+        background-image: url(../images/section4.jpg);
+        height: 900px;
+    }
+
+    .introText {
+        font-size: 30px;
+    }
+
+
+
+
+}
+
+
+@media screen and (max-width:539px) {
+    .Section4BoxWrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .Section4InnerBackground {
+        background-image: url(../images/section4.jpg);
+        height: 1450px;
+    }
+
+    .Section4Box {
+        width: 85%;
+        margin: 20px;
+    }
+
+    .Section4Box#bottom {
+        margin-top: 0px;
+    }
+
+    .introText {
+        font-size: 20px;
+    }
+
+    .Section4Box h3 {
+        font-size: 18px;
+        color: white;
+        margin: 0;
+    }
+    
+
+}

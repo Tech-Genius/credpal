@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap');
+
+.Section3 {
+    display: grid;
+    margin-top: 100px;
+    background-color: #006DF7;
+    padding: 100px 0px;
+    color: #ffffff;
+}
+
+
+.Section3Inner {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.Section3Box {
+    width: 80%;
+    justify-self: center;
+    text-align: center;
+    display: grid;
+}
+
+.Section3Box img {
+    width: 100%;
+    /* -webkit-box-shadow: 10px 10px 5px -3px rgba(143,140,143,1);
+    -moz-box-shadow: 10px 10px 5px -3px rgba(143,140,143,1);
+    box-shadow: 10px 10px 5px -3px rgba(143,140,143,1); */
+    border-radius: 10px;
+    padding: 40px 0px;
+    border: #00b0ea2c 1px solid;
+}
+
+.Section3Box h3 {
+    font-size: 40px;
+    margin: 0;  
+}
+
+
+.Section3Box p {
+    font-size: 17px;
+    width: 80%;
+    justify-self: center;
+}
+
+.Section3Box  button{
+background: #ffffff !important;
+color: #006DF7 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+
+@media screen and (max-width:768px) {
+    .Section3 {
+        margin-top: 50px;
+    }
+    
+    
+    .Section3Inner {
+        grid-template-columns: 1fr;
+    }
+
+    .Section3Box {
+        margin: 10px 0px;
+        width: 85%;
+    }
+
+    .Section3Box h3 {
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width:539px) {
+
+    .Section3Box h3{
+        font-size: 26px;
+    }
+
+    .Section3Box p {
+        width: 90%;
+    }
+}
+

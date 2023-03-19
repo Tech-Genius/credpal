@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap');
+
+.Join {
+    background: #F1F5FF;
+    height: fit-content;
+    display: grid;
+    align-items: center;
+    margin-top: 80px;
+    position: relative;
+}
+
+
+
+.JoinInner {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    align-items: center;
+}
+
+.JoinBox {
+    width: 80%;
+    justify-self: center;
+    display: grid;
+    justify-content: center;
+}
+
+
+.JoinBox h3 {
+    font-size: 45px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.JoinBox p{
+    font-size: 17px;
+}
+
+
+
+.store {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap; 
+    margin-top: 30px;  
+}
+.store img{
+    margin-right: 10px;
+}
+
+.JoinBox#img img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+
+@media screen and (max-width:768px) {
+
+    .Join {
+        margin-top: 50px;
+        padding: 50px;
+        align-items: start;
+    }
+    
+    
+    .JoinInner {
+        grid-template-columns: 1fr;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .JoinBox {
+        margin: 20px 0px;
+        width: 100%;
+        justify-self: start;
+    }
+
+    .JoinBox h3 {
+        font-size: 30px;
+    }
+
+    .JoinBox#img{
+       display: none;
+    }
+    
+}
+
+
+@media screen and (max-width:539px) {
+
+    .store img{
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    .JoinBox h3{
+        font-size: 26px;
+    }
+}

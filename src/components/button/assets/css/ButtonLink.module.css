@@ -1,5 +1,5 @@
 .ButtonLink .ButtonLinkTo button {
-    padding: 13px 25px;
+    padding: 13px 35px;
     border-radius: 25px;
     color: white;
     background:#006DF7;
@@ -11,7 +11,4 @@
     font-family: 'DM Sans', sans-serif;
 }
 
-.ButtonLink .ButtonLinkTo button:hover {
-    box-shadow: inset 200px 0 0 0 #244B70;
-    transition: ease-in 0.5s;
-}
+

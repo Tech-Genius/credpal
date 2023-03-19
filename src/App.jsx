@@ -4,7 +4,7 @@ import './App.css'
 import { Route, Router, Routes, useLocation } from 'react-router-dom'
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
-// import Home from './components/pages/home/Home';
+import Home from './components/pages/home/Home';
 
 function App() {
   const { pathname } = useLocation();
@@ -34,7 +34,7 @@ function App() {
       <Routes>
 
         {/* home */}
-        {/* <Route path='/' element={<Home />} /> */}
+        <Route path='/' element={<Home />} />
 
 
 

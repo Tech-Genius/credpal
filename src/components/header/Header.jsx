@@ -41,16 +41,24 @@ function Header() {
     // this function changes the background color of the header once the scroll is greater than 100
     useEffect(() => {
         let header = document.getElementById("header");
+        let router_link1 = document.getElementById("router_link1");
+        let router_link2 = document.getElementById("router_link2");
         window.addEventListener("scroll", () => {
-            if (window.scrollY > 100) {
-                header.style.background = " linear-gradient(to right,  white, white)";
+            if (window.scrollY > 150) {
+                header.style.background = " linear-gradient(to right,  white, white)";    
+                router_link1.style.color = "#121212";
+                router_link2.style.color = "#121212";
+                header.style.boxShadow = "  3px 3px 6px rgba(189,182,189,1)"; 
                 document.getElementById("logo-img").src = dark_logo;
                 document.getElementById("ng-img").src = dark_ng;
 
             } else {
                 header.style.background = "transparent";
+                header.style.boxShadow = " none"; 
                 document.getElementById("logo-img").src = light_logo;
                 document.getElementById("ng-img").src = light_ng;
+                router_link1.style.color = "white";
+                router_link2.style.color = "white";
 
             }
         })
@@ -68,7 +76,7 @@ function Header() {
             <div className={style.header_inner} >
                 <div className={style.logo}>
                     <Link to="/" onClick={close}>
-                        <img src={dark_logo} id='logo-img' alt="" />
+                        <img src={light_logo} id='logo-img' alt="" />
                     </Link>
                 </div>
 
@@ -81,7 +89,7 @@ function Header() {
 
                         <div className={style.left}>
                             <div className={style.dropdown_wrap} tabIndex={0}>
-                                <li className={style.menu_item}  id={style.product}>
+                                <li className={`${style.menu_item} ${style.product}`} id={'router_link1'} >
                                    
                                   Products <TfiAngleDown className={style.dropdownIcon} />
 
@@ -107,7 +115,7 @@ function Header() {
                                 </li>
                             </div>
                             <li className={style.menu_item}><Link activeClass="active" onClick={close}
-                                to="/business" className={style.router_link} >Business</Link></li>
+                                to="/business" className={`${style.router_link} ${style.business}`} id={'router_link2'}>Business</Link></li>
 
                         </div>
 
@@ -116,7 +124,7 @@ function Header() {
 
                             <li className={style.menu_item}>
                                 <Link className={style.router_link} id={style.country} to={''}>
-                                  <img id="ng-img" src={dark_ng} alt="" />
+                                  <img id="ng-img" src={light_ng} alt="" />
                                 </Link>
                             </li>
 

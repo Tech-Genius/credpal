@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+.Section1 {
+    display: grid;
+    align-items: center;
+    margin-top: 80px;
+overflow: hidden;
+}
+
+
+.Section1Inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Section1Box {
+    width: 65%;
+    justify-self: center;
+    margin: 50px 0px;
+}
+
+.Section1Box img {
+    width: 100%;
+}
+
+.Section1Box h3 {
+    font-size: 45px;
+    color: #000000;
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.Section1Box h3 span {
+    color: #00B0EA;
+}
+
+
+.Section1Box p {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+
+@media screen and (max-width:768px) {
+
+    .Section1 {
+        margin-top: 50px;
+    }
+
+    .Section1Inner {
+        grid-template-columns: 1fr;
+    }
+
+    .Section1Box {
+        margin:30px 0px;
+        width: 85%;
+    }
+
+    .Section1Box#image {
+        grid-row: 2;
+    }
+
+
+    .Section1Box h3 {
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width:539px) {
+    .Section1Box h3 {
+        font-size: 26px;
+    }
+}

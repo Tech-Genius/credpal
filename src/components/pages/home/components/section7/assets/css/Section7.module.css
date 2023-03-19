@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap');
+
+.Section7 {
+    display: grid;
+    align-items: center;
+    margin-top: 80px;
+overflow: hidden;
+}
+
+
+.Section7Inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.Section7Box {
+    width: 80%;
+    justify-self: center;
+}
+
+.Section7Box img {
+    width: 100%;
+ 
+    border-radius: 10px;
+    border: #00b0ea2c 1px solid;
+
+}
+
+.Section7Box h3 {
+    font-size: 35px;
+    color: #2F338D;
+    margin: 0;
+}
+
+.Section7Box h3 span {
+    color: #00B0EA;
+}
+
+
+.Section7Box p {
+    font-size: 15px;
+}
+
+.Section7Box p span {
+    color: #00B0EA;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+
+@media screen and (max-width:768px) {
+
+    .Section7 {
+        margin-top: 50px;
+    }
+
+    .Section7Inner {
+        grid-template-columns: 1fr;
+    }
+
+    .Section7Box {
+        margin:10px 0px;
+        width: 85%;
+    }
+
+    .Section7Box#image {
+        grid-row: 2;
+    }
+
+
+    .Section7Box h3 {
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width:539px) {
+
+    .Section7Box h3 {
+        font-size: 26px;
+    }
+}
